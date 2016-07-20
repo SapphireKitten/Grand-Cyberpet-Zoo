@@ -1,5 +1,8 @@
 $(function() {
-    var left = 0;
+    var test = $("#gamescreen").css("margin-left");
+    var initLeft = parseInt($("#gamescreen").css("marginLeft"), 10);
+    $("#content").css('left', initLeft + 'px');
+    var left = initLeft;
 
     $('.pet').on("click", function() {
         window.open(this.value);
@@ -13,13 +16,13 @@ $(function() {
 
     $("body").keydown(function(e) {
         if(e.keyCode == 37) { // left
-            if(left < 36) {
+            if(left < initLeft + 36) {
                 left += 2;
                 $("#content").css('left', left + 'px');
             }
         }
         else if(e.keyCode == 39) { // right
-            if(left > -95) {
+            if(left > initLeft + -95) {
                 left -= 2;
                 $("#content").css('left', left + 'px');
             }
