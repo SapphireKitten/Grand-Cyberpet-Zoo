@@ -1,6 +1,9 @@
 $(function() {
-    var test = $("#gamescreen").css("margin-left");
-    var initLeft = parseInt($("#gamescreen").css("marginLeft"), 10);
+    var margin = ($("body").height() - 813) / 2;
+    var marginS = margin + "px";
+    $("#game-screen").css("margin-top", margin + "px");
+    $("#content").css("margin-top", margin + "px");
+    var initLeft = parseInt($("#game-screen").css("marginLeft"), 10);
     $("#content").css('left', initLeft + 'px');
     var left = initLeft;
 
