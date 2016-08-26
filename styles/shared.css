@@ -17,6 +17,7 @@ body {
 }
 
 #content {
+    pointer-events: all;
     display: inline-block;
     z-index: -1;
     position: absolute;
@@ -40,7 +41,8 @@ body {
     margin-left: calc(50% - 500px + 1000px);
 }
 
-.side, #game-screen {
+#game-screen {
+    pointer-events: none;
     position: fixed;
     z-index: 1;
     display: inline-block;
