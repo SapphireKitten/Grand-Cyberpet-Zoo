@@ -1,0 +1,25 @@
+{
+    "data": {
+        "corn": {
+            "type": "pet",
+            "name": "Cornelia",
+            "tree": [{ 
+                "m": ["Hey there, sweetie! How're you doing?"],
+                "answers": [
+                    { "m": "Hello! I'm doing well. And you?", "next": "mood_nice" },
+                    { "m": "Yum... How much?... To eat you, I mean.", "next": "mood_mean"}]
+            },
+            {
+                "label": "mood_nice",
+                "m": ["Doing just fine myself. Just got myself some ice cream. You should get some too.",
+                    "Enjoy your day!"]
+            },
+            {
+                "label": "mood_mean",
+                "m": ["Wh-what? My! How could you even ask such a horrendous thing?", 
+                    "This may be a cafe, but I am most certainly NOT for sale. Where did you learn such manners?",
+                    "Get away from me, before I get you kicked out of here."]
+            }]
+        }
+    }
+}

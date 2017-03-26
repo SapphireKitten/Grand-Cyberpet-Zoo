@@ -4,8 +4,8 @@
 }
 
 .cupcake {
-    left: 990px;
-    top: 450px;
+    left: 50px;
+    top: 300px;
 }
 
 .fairy {
@@ -37,6 +37,11 @@
 .rabbit {
     left: 310px;
     top: 375px;
+}
+
+.rock {
+    left: 1055px;
+    top: 295px;
 }
 
 .strawberry {
